@@ -1,0 +1,51 @@
+# How to develop Softskills and work with a remote team [hard mode]
+
+As a developer i learned to develop my softskills the hard way. I made a lot of errors in this process. I will show off my biggest mistakes and provide some lessons learned. So other devs might think about their communication with others, and what they might want to improve.
+
+## Background
+
+My "career" (if you want to call it like that) started in a small team of 12 developers, with the first team split on the horizon and a soon to be added remote team in a different country. Based on that a lot of in-place communication patterns will have been proven as inefficient or simply incompatible with said remote team. It took some time, but lets start with each lesson one by one or shall we call it escalations, because those had some serious impact, and not the easy kind.
+
+## Lesson 1: How? aka Punctuation is the key
+
+Somehow during my teenage years i develop a strange habbit of ending each sentence with an Exclamationmark. I am not sure, but i might thought it looked cool. Nevertheless i did not pay much attention to that fact, till the first pull requests from said remote team were created. Oh boy, looking back some of those comments seem to me now really rude, but it never was my intention. Here are some examples:
+
+"You should extract that into an own Method!"
+"This looks odd! Somehow it feels off, i think you should rework that!"
+"can you clean this!"
+
+
+There is even something else odd with this, but that is another lesson. Lets focus on this Exclamationmark, it is horrific. Now some people tend to write a lot in Caps, that is actually even worse, luckily i did not step into that. Keep in mind, that does not only affect your PR-comments. This is also the key for a lot of other communications like email, slack, etc. As soon as you lose the direct contact to the other person, and can not undermine your text with body language, it gets really hard to guess your intention.
+
+## Lesson 2: Inclusion 
+
+Lets take a Look at the last examples:
+
+"You should extract that into an own Method!"
+"This looks odd! Somehow it feels off, i think you should rework that!"
+"can you clean this!"
+
+Those are all direct inflicting a person, it is me pointing at them. But in the end, we are working together on a solution. Just changing this simple finger pointing to an all inclusive "We" those comments do not look like the same:
+
+"We should extract that into an own Method"
+"This looks odd, Somehow it feels off, i think we should rework that"
+"can we clean this"
+
+Feels like i went from full beast into kitty cat
+
+So after a some time, i or better my scrum master figured that out and trained me, to use proper punctuation. Additionally i started rereading my comments before posting them. It helped i was not the mean grumpy dude in the other country complaining, i was the nice co worker who tried to find a common solution. 
+
+But that is not all, there is even the other part, of where you communication, and who has access to it.
+
+## Lesson 3: Transparency
+
+Yeah well, as you can imagine, this was not my last trip down the escaltion hill. 
+
+Next issue descision finding and transport of such. Our co located teams had developed a really nice communication strategy - we called it the "flurfunk" - actually decision were transported over a coffee or shouted into the next office. No need for writing things down, or explain it in detail somewhere. Everybody was there, everybody heard it, we are fine... NOT. The remote team started to feel isolated, it was hard for them to figure out what was going on, what have been the recent decisions, etc. They were just not in the loop. To uncover such an issue is not that trivial. The party who should change has no pain, for us it was no problem, we got all we need. Our remote team needed us to change, or adapt the process, without being involved in the process. Tough nut - but luckily we managed to get a hold of this somehow. It took us quiet a while, but after defining some crucial "communication guidelines", which involved emails and async communication, we managed to get to a good and transparent point.
+
+So transparency is the key.
+
+
+
+## Lesson 5: Accesibility
+
