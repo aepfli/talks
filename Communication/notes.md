@@ -6,7 +6,7 @@ As a developer i learned to develop my softskills the hard way. I made a lot of 
 
 My "career" (if you want to call it like that) started in a small team of 12 developers, with the first team split on the horizon and a soon to be added remote team in a different country. Based on that a lot of in-place communication patterns will have been proven as inefficient or simply incompatible with said remote team. It took some time, but lets start with each lesson one by one or shall we call it escalations, because those had some serious impact, and not the easy kind.
 
-## Lesson 1: How? aka Punctuation is the key
+## Lesson How? aka Punctuation is the key
 
 Somehow during my teenage years i develop a strange habbit of ending each sentence with an Exclamationmark. I am not sure, but i might thought it looked cool. Nevertheless i did not pay much attention to that fact, till the first pull requests from said remote team were created. Oh boy, looking back some of those comments seem to me now really rude, but it never was my intention. Here are some examples:
 
@@ -14,10 +14,11 @@ Somehow during my teenage years i develop a strange habbit of ending each senten
 "This looks odd! Somehow it feels off, i think you should rework that!"
 "can you clean this!"
 
+There is even something else odd with this, but that is another lesson. Lets focus on this Exclamationmark, it is horrific. Think about it, a "Stranger" somewhere else, you hardly know, writes that. Quiet intrusive.
 
-There is even something else odd with this, but that is another lesson. Lets focus on this Exclamationmark, it is horrific. Now some people tend to write a lot in Caps, that is actually even worse, luckily i did not step into that. Keep in mind, that does not only affect your PR-comments. This is also the key for a lot of other communications like email, slack, etc. As soon as you lose the direct contact to the other person, and can not undermine your text with body language, it gets really hard to guess your intention.
+Keep in mind, that does not only affect your PR-comments. This is also the key for a lot of other communications like email, slack, etc. As soon as you lose the direct contact to the other person, and can not undermine your text with body language, it gets really hard to guess your intention.
 
-## Lesson 2: Inclusion 
+## Lesson Inclusion 
 
 Lets take a Look at the last examples:
 
@@ -37,7 +38,7 @@ So after a some time, i or better my scrum master figured that out and trained m
 
 But that is not all, there is even the other part, of where you communication, and who has access to it.
 
-## Lesson 3: Transparency
+## Lesson Transparency
 
 Yeah well, as you can imagine, this was not my last trip down the escaltion hill. 
 
@@ -45,7 +46,15 @@ Next issue descision finding and transport of such. Our co located teams had dev
 
 So transparency is the key.
 
+## Lesson Accessibility and Reproducibility
 
+Another big part in our defined guidelines was accessibility of Information and this goes hand in hand with the Transparency part. Being transparent is one side, but all the information should also be accessible for everyone.
 
-## Lesson 5: Accesibility
+Let's say we have an important meeting regarding some design decisions. What is the normal process. The most experienced devs or architects stick their heads together (ideally this meeting is publicly known, so people at least know what is going on) and decide on a fancy new techstack every one should follows. But why? How did you decide on that? Of course you should not write down every comment in the meeting, but an overview. Not everyone had time to join, not everyone was invited. In the end everyone should not why and where to find this information. You never know when aliens will obduct your smart senior devs, or when they forget about those things.
 
+## Lesson Message Filtering
+Let's get controversial.
+
+Every developer wants to be informed about important issues which affect his/her business and of course there need to be some kind of Message control or disciplin. But not filtering, i have seen this quiet often, best example is "blockers" (we all love them). So Quality engineer A gets a blocker ticket, and starts finding help from developers. Pinging random senior devs with the same question - ticket was announced in the right communication channels anyways. But for A it is going to slow. So lets ping the senior devs. They should know what is going on - but instead of some common ground, this will most likely happen in a hidden place, like a direct message. Suddenly A has 3 devs responding in hidden communication channels, none synced with the others, a lot of information gathered. But even filtered for the 3 responding devs. Instead of sharing a channel - no not a group dm, a channel - a lot of duplicate information and efforts could be reduced. Even worse when Developer 4 who is actually working on the task, tries to gather information. Developer 4 does not know, who provided information, nor who said what. It is a big black box.
+
+Let's say we had a channel, suddenly 4 people would talk together about the issue, pointing out flaws and number 4 would have the whole history of communication if needed.
