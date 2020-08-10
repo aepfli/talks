@@ -14,6 +14,7 @@ Based on that a lot of in-place communication patterns will have been proven as 
 It took some time, but lets start with each lesson one by one or shall we call it escalations, because those had some serious impact, and not the easy kind.
 
 We will talk about:
+
 - Punctuation
 - Inclusion
 - Transparency
