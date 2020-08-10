@@ -1,5 +1,7 @@
 # How to develop Softskills and work with a remote team [hard mode]
 
+DISCLAIMER : This is an opinionated talk
+
 As a developer i learned to develop my softskills the hard way. I made a lot of errors in this process. I will show off my biggest mistakes and provide some lessons learned. So other devs might think about their communication with others, and what they might want to improve.
 
 ## Background
