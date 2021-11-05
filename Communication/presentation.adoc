@@ -1,0 +1,296 @@
+= Work with a remote team [hard-mode]
+Simon Schrottner <s.schrottner@gmail.com>
+2021-11-04
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../java]
+:customcss: css/code.css
+:revealjs_history: true
+:revealjs_fragmentInURL: true
+:toc: macro
+:toc-title:
+:toclevels: 1
+:docinfo: shared
+:title-slide-background-image: images/backgrounds/background-presentation.png
+
+[%notitle]
+== "intro"
+
+[%notitle]
+[transition="slide-in fade-out"]
+=== "You should properly format this!!!!"
+
+[.speechbubble] 
+YOU SHOULD CHANGE THIS!!!!
+
+image::random-dev.png[height=30%]
+
+[NOTE.speaker]
+--
+Have you ever experienced such a comment
+Offensive, demanding, frustrating to receive
+--
+
+[%notitle]
+[transition="fade-in slide-out"]
+=== "You should properly format this."
+
+[.speechbubble] 
+You should change this.
+
+image::random-dev.png[height=30%]
+
+=== Punctuation is crucial! 
+
+[%notitle]
+[.columns]
+[transition="fade-in fade-out"]
+=== about me
+[.column]
+--
+[discrete]
+=== Random Dev
+
+--
+
+[%step]
+[.column.is-one-third]
+--
+[.thumb]
+image::simon.jpg[]
+--
+
+[%notitle]
+[.columns]
+[transition="fade-in slide-out"]
+=== about me
+[.column]
+--
+[discrete]
+=== Simon Schrottner
+
+* Code Quality Fanboy
+* Build Automation Ninja
+* Open Source Enthusiast
+--
+
+[.column.is-one-third]
+--
+[.thumb]
+image::simon.jpg[]
+--
+
+[%notitle]
+[transition="slide-in fade-out"]
+=== Inclusive, Transparent and Accessible Communication
+
+[%step]
+--
+[discrete]
+=== _inclusive_, 
+--
+[%step]
+--
+[discrete]
+=== _transparent_,
+--
+[%step]
+--
+[discrete]
+=== _accessible_,
+--
+[%step=1]
+--
+[discrete]
+=== communication
+--
+
+=== Beginning
+
+[%step]
+image::small-team.png[]
+[NOTE.speaker]
+--
+- small team
+- co-located
+- going for a beer more often than never
+--
+
+[.columns]
+=== Communication Patterns
+
+[.column]
+[%step]
+--
+Meetings
+
+image::background/meeting-room.png[]
+--
+
+[.column]
+[%step]
+--
+Coffee
+
+image::background/cafe.png[]
+--
+
+[.column.is-half]
+[%step]
+--
+"flurfunk"
+
+image::background/floor.png[]
+--
+
+
+[NOTE.speaker]
+--
+things you do when co located
+--
+
+=== Management induced change
+
+[%step]
+- "resource"-shortage
+- More people fix the problem faster
+
+[NOTE.speaker]
+--
+-> the remote team was born
+--
+
+=== remote team
+
+[%step]
+- skilled junior developers
+- another country
+
+=== started good ...
+// might use emojis here
+
+=== ... went bad fast.
+// might use emojis here
+
+
+== Inclusion
+
+[%notitle]
+=== Merge Request comments
+
+[%step]
+"You should extract that into an own Method!"
+
+[%step]
+"This looks odd! Somehow it feels off.. i think you should rework that!"
+
+[%step]
+"Can you clean this!"
+
+=== Us not them!
+
+[%step]
+- working together
+- common goal
+
+[%notitle]
+=== Merge Request instructions bad
+
+[%step]
+*You* should extract that into an own Method!
+
+
+[%notitle]
+=== Merge Request instructions good
+
+[%step]
+*We* should extract that into an own Method.
+
+[NOTE.speaker]
+--
+- do you feel the change
+- embrassed 
+- trustful source for questions
+- other persons cares
+--
+
+== Transparency
+
+=== Flurfunk
+
+image::background/floor.png[]
+
+=== Co-location
+
+[%step]
+- short communication paths
+- easy to coordinate
+- fast resolution
+
+=== what about the remote team
+
+[%step]
+- isolated
+- dictated
+
+=== Documentation is the key!
+
+[%step]
+- write summaries
+- seek and allow feedback
+
+== Accessibility
+
+[%notitle]
+=== Documentation is the key, but
+
+> Documentation is the key, but best documentation is useless, if nobody can read it or knows about it.
+
+=== Everything should be accessible to everyone
+
+[%step]
+- .. to some degree
+- needed for their work
+- announced publicly
+
+=== Message Control
+
+[%step]
+- Accessibility != Spammy
+- define importance
+- who can filter for others?
+
+
+[NOTE.speaker]
+--
+- failing builds on feature branches, who cares
+- failing buidls on integration branch, alert
+- new fancy approach in use - interesting, but not worth to be alerted
+- blocker on production system - alert everyone
+--
+
+=== Find the right tool!
+
+- Blogs
+- Chats
+- Mail
+
+== Take aways
+
+=== working remote
+[%step]
+- async/remote work is hard
+- communication is even harder
+
+=== Pain/Change/Gain problem
+
+> The one with the pain and the biggest gain, often have the least change.
+
+=== environment
+
+[%step]
+- save
+- trustful
+- thrive for the best
+
+=== Be the senior you needed when you were a junior!!!

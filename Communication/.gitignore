@@ -1,0 +1,8 @@
+.gradle/
+bin/
+build/
+presentation.html
+.classpath
+.project
+.settings
+node_modules
