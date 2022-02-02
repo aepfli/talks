@@ -1,0 +1,26 @@
+.speechbubble {
+    position: relative;
+    background: #2e3436;
+    border-radius: .4em;
+    padding: .4em;
+}
+
+.speechbubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 0.625em solid transparent;
+    border-top-color: #2e3436;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -0.312em;
+    margin-bottom: -0.625em;
+}
+
+.reveal h1, .reveal section.chapter h2, .quoteblock {
+    background-color: rgb(0,0,0, 0.8);
+    text-align: center;
+}
