@@ -36,13 +36,6 @@ image::background/basic.jpg[background, size=cover]
 
 > JUnit Pioneer provides extensions for JUnit 5 and its Jupiter API. It does not limit itself to proven ideas with wide application but is purposely open to experiments. It aims to spin off successful and cohesive portions into sibling projects or back into the JUnit 5 code base.
 
-=== Goals
-
-[%step]
-* Fun to contribute
-* Fun to maintain
-* ... and dropping releases along the way to ease other developers experiences
-
 === Current Status
 
 * Hobby Project by Hobbiests
@@ -71,7 +64,7 @@ image::background/caveats.jpg[background, size=cover]
 
 [%step]
 * Interuption free workflow 
-* were all informations and possible actions are presented
+* were all information and possible actions are presented
 * where they are needed,
 * with little effort to access them
 * for people working on the project
@@ -87,13 +80,6 @@ image::CurrentBuild.png[]
 ** 3 OS, 3 Java Versions, multiple JUnit versions
 * fourth stage experimental builds, releasing, etc
 
-=== Pull requests
-
-[%step]
-* Code is "done"
-* tested locally
-* ready to review
-
 === CI Failure
 
 image::ci_fialure.png[]
@@ -106,7 +92,7 @@ image::ci_fialure.png[]
 === CI Failure - Overview
 
 * Split up into smaller builds: Tests, Codestyles
-* Use Test Reporters to comment on MR with test information
+* Use Test Reporters to comment on Pull Requests with test information
 ** https://github.com/marketplace/actions/junit-report-action[JUnit Report Action]
 ** https://github.com/marketplace/actions/test-reporter[Test Reporter]
 ** https://github.com/marketplace?category=&query=junit+sort%3Apopularity-desc&type=&verification=[...]
@@ -119,13 +105,13 @@ image::spotless-comments.jpg[]
 
 [%step]
 * provide IDE configurations
-* extract to own Job to increase visibility
+* extract to own job to increase visibility
 * Git-Hooks ~
 
 === Actions
 
-* Aim to increase information within PRs, without getting Spammy
-* Improve correlation expecations and tooling
+* Aim to increase information within Pull Requests, without getting Spammy
+* Improve correlation between expecations and tooling
 
 [.chapter]
 == Maintainer Experience
@@ -171,18 +157,17 @@ image::background/starwars.jpg[background, size=cover]
 [%step]
 * Provide a Standard with little configuration
 * Allow customization to match project needs
-* Common ground for improvements
 
 === Investigations
 
 * Versioning of unified resources (only GitLab/Jenkins experience currently)
-* Feasibility - few developer, a lot of additional tooling
+* Feasibility - few developers, a lot of additional tooling
 
 === Playground Project
 
-* Testing Integrations
-* Verifying Adaptions
-* Template for other Extensions
+* Testing integrations
+* Verifying adaptions
+* Template for other extensions
 
 [.chapter]
 == Growth Basics
@@ -191,14 +176,14 @@ image::background/architecture.jpg[background, size=cover]
 
 === How to tackle this?
 
-* there are already a lot of big projects
-* no need to reinvent
-* take a look and inspect others, maybe ask what is not working
+* There are already a lot of big projects
+* No need to reinvent
+* Take a look and inspect others, maybe ask what is not working
 
 === Without Research (In my Mind) - Assumptions
 
-* JUnit Pioneer will be a lot of small projects
-* Not all Maintainers will work, and want to work on other Extensions
+* JUnit Pioneer will be a collection of small projects
+* Not all Maintainers will work, and want to work on other extensions
 * A basic ruleset/tooling should be in place
 
 [.chapter]
@@ -227,7 +212,7 @@ the main project.
 
 All projects with the purpose of supporting the developers.
 
-* GitHub Actions Collection (if that is possible)
+* GitHub Actions collection (if that is possible)
   ** Build Actions
   ** Linters
   ** Formatters
@@ -292,16 +277,18 @@ image::background/advanced.jpg[background, size=cover]
 
 === Membership Powers
 
-* Member of extension can be part of one or more Extensions and are "approved" "Approvers"
-* Maintainer of extension can be part of one or more Extensions and are allowed to Merge/Release etc.
-* Maintainer of extensions are also Member of the Organization and have approval rights on tooling repositories
-* Maintainer of organization is the highest level. They have access to secrets etc. and full rights
+* *Member of Extension* can be part of one or more Extensions and is "approved" "Approver"
+* *Maintainer of Extension* can be part of one or more Extensions and are allowed to Merge/Release etc.
+* *Maintainer of Extension* is also *Member of Organization*
+* *Member of Organization* is "approved" "Approver" on Tooling/Governance projects
+* *Maintainer of Organization* is the highest level. They have access to secrets etc. and full rights
 
 === Membership Election
 
-* How to get elected? (Nomination by others)
-* Development Contribution needed? (?)
-** Can somebody be elected due to financial support? eg Corporate buying in?
+* How to get elected? (Nomination by others within Role)
+** Veto by *Maintainer of Organization* (Yes)
+* Development Contribution needed? (No)
+** Can somebody be elected due to financial support? eg Corporate buying in? (No)
 * How many people have to approve which are already part of that role? (?)
 ** Will it be an asynchronous process with a deadline? or a meeting where only appearence counts? (?)
 * What about demoting? reasons, secret rotation, etc?
@@ -311,7 +298,7 @@ image::background/advanced.jpg[background, size=cover]
 == Actions
 
 [%step]
-* Update Readmes
+* Update ReadMes (Security, Code of Conduct)
 * Add Templates
 * Improve GHA Feedback for Unittests
 * Extract Spotless into own Build Job
