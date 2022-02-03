@@ -38,22 +38,33 @@ image::background/basic.jpg[background, size=cover]
 
 === Current Status
 
-* Hobby Project by Hobbiests
-* 5 Maintainers/Hobbiests
+* Hobby Project by Hobbyists
+* 5 Maintainers/Hobbyists
 * ~ regular Meetings
 * GitHub Actions as CI/CD tool
 
 === Project Overview
 
-* 1 JUnit 5 Extension Collection
-* 1 JUnit 5 Standalone Extensions
-* 1 JUnit 4 to 5 Migration Tool
+* JUnit5 Extension Collection
+* JUnit5 Standalone Extension
+* JUnit4 to JUnit5 Migration Tool
 
 === Development
 
 * Burst mode -> No Auto-releasing
 * Regular on Stream coordination
 * Focused on Collection
+
+=== Improved Build Experience
+
+image::CurrentBuild.png[]
+
+[%step]
+* first stage for security
+* second stage for immediate feedback
+* third stage for compatibility
+** 3 OS, 3 Java Versions, multiple JUnit versions
+* fourth stage experimental builds, releasing, etc
 
 [.chapter]
 == Development Experience
@@ -69,17 +80,6 @@ image::background/caveats.jpg[background, size=cover]
 * with little effort to access them
 * for people working on the project
 
-=== Improved Build Experience
-
-image::CurrentBuild.png[]
-
-[%step]
-* first stage for security
-* second stage for immediate feedback
-* third stage for compatibility
-** 3 OS, 3 Java Versions, multiple JUnit versions
-* fourth stage experimental builds, releasing, etc
-
 === CI Failure
 
 image::ci_fialure.png[]
@@ -91,6 +91,7 @@ image::ci_fialure.png[]
 
 === CI Failure - Overview
 
+[%step]
 * Split up into smaller builds: Tests, Codestyles
 * Use Test Reporters to comment on Pull Requests with test information
 ** https://github.com/marketplace/actions/junit-report-action[JUnit Report Action]
@@ -120,6 +121,7 @@ image::background/LegoKeyboard.jpg[background, size=cover]
 
 === Low hanging fruits
 
+[%step]
 * Templates
 * MD-Update
 ** Security
@@ -133,13 +135,18 @@ image::background/LegoKeyboard.jpg[background, size=cover]
 
 === Result
 
-* Less labeling efforts
-* Focus on PRs
+* Focus on the Contributions
 
 [.chapter]
 == Standalone Extension(s)
 
 image::background/starwars.jpg[background, size=cover]
+
+=== Definition
+
+> A standalone extension or extension collection is fullfilling a dedicated purpose.
+If the goal is a general purpose extension collection as an incubator, it should be part of
+the main project.
 
 === Problems
 
@@ -148,6 +155,7 @@ image::background/starwars.jpg[background, size=cover]
 
 === Possible Solution
 
+[%step]
 * Centralize CI configuration
 * Unify and optimize build
 * Extract configuration to a common point
@@ -157,14 +165,18 @@ image::background/starwars.jpg[background, size=cover]
 [%step]
 * Provide a Standard with little configuration
 * Allow customization to match project needs
+* Able to define their own mode of operation
+* Allows exploration and continous improvements
 
 === Investigations
 
-* Versioning of unified resources (only GitLab/Jenkins experience currently)
-* Feasibility - few developers, a lot of additional tooling
+[%step]
+* Versioning of unified resources
+* Feasibility
 
 === Playground Project
 
+[%step]
 * Testing integrations
 * Verifying adaptions
 * Template for other extensions
@@ -176,12 +188,14 @@ image::background/architecture.jpg[background, size=cover]
 
 === How to tackle this?
 
+[%step]
 * There are already a lot of big projects
 * No need to reinvent
 * Take a look and inspect others, maybe ask what is not working
 
 === Without Research (In my Mind) - Assumptions
 
+[%step]
 * JUnit Pioneer will be a collection of small projects
 * Not all Maintainers will work, and want to work on other extensions
 * A basic ruleset/tooling should be in place
@@ -194,33 +208,21 @@ image::background/advanced.jpg[background, size=cover]
 === Project types
 
 * Extensions/Projects
-* Tooling/Governance
-
-=== Project types - Extension
-
-> A standalone extension or extension collection is fullfilling a dedicated purpose.
-If the goal is a general purpose extension collection as an incubator, it should be part of
-the main project.
-
-=== Project types - Extension II
-
-* Able to define their own mode of operation
-* Should comply with default ruleset
-* Allows exploration and continous improvements
+* Tooling
+* Governance
 
 === Project types - Tooling/Governance
 
-All projects with the purpose of supporting the developers.
+> All projects with the purpose of supporting the contributors.
 
+[%step]
 * GitHub Actions collection (if that is possible)
   ** Build Actions
-  ** Linters
-  ** Formatters
+  ** Linters, Formatters, ...
 * Maybe centralized build tools (unified Gradle configuration etc.)
-* Governance project (more later)
 
 [.chapter]
-== Growth Documentation
+== Governance
 
 image::background/advanced.jpg[background, size=cover]
 
@@ -228,15 +230,7 @@ image::background/advanced.jpg[background, size=cover]
 
 Communication should be accessible, transparent and inclusive.
 
-=== Extension Documentation
-
-* Within the project
-* Same stack for all projects
-* One documentation project which will unite them
-
-* Same applies for our Tooling
-
-=== Governance Documentation
+=== Governance Project
 
 > General overview of the organization governance and setup
 
@@ -250,32 +244,35 @@ Communication should be accessible, transparent and inclusive.
 
 [%step]
 * ... to persist decisions and revisit them.
-* each change should be a Record or persisted in a Record
-** new sub projects with maintainer and purpose
-** change in Processes
+* Each decision should be persisted in a record
+** New sub projects with maintainer and purpose
+** Change in processes
 * Why not Issues?
 
 === Issues
 
+[%step]
 * Noisy
 * Hard to Follow
 * Good starting point
-* How to update it later?
+* How to handle updates?
 
-[.chapter]
-== Growth Membership
+=== Membership Types
 
-image::background/advanced.jpg[background, size=cover]
-
-=== Membership types
-
+[%step]
 * Contributor
 * Member of Extension
 * Maintainer of Extension
 * Member of Organization
 * Maintainer of Organization
 
-=== Membership Powers
+=== Membership Topics
+
+* Election
+* Security
+* Permissions
+
+=== Membership Permissions
 
 * *Member of Extension* can be part of one or more Extensions and is "approved" "Approver"
 * *Maintainer of Extension* can be part of one or more Extensions and are allowed to Merge/Release etc.
@@ -285,6 +282,7 @@ image::background/advanced.jpg[background, size=cover]
 
 === Membership Election
 
+[%step]
 * How to get elected? (Nomination by others within Role)
 ** Veto by *Maintainer of Organization* (Yes)
 * Development Contribution needed? (No)
@@ -293,15 +291,20 @@ image::background/advanced.jpg[background, size=cover]
 ** Will it be an asynchronous process with a deadline? or a meeting where only appearence counts? (?)
 * What about demoting? reasons, secret rotation, etc?
 
-
 [.chapter]
 == Actions
 
+[%notitle]
+=== Actions I
 [%step]
 * Update ReadMes (Security, Code of Conduct)
 * Add Templates
 * Improve GHA Feedback for Unittests
 * Extract Spotless into own Build Job
+
+[%notitle]
+=== Actions II
+[%step]
 * Evaluate GitHook for Spotless
 * Provide IDE support
 * Evaluate Feasibility of Template Repository (GHA, Build Config, etc)
@@ -327,6 +330,6 @@ image::background/advanced.jpg[background, size=cover]
 * 2h thinking in hot humid conditions
 * 2h thinking during runs
 * 1h scimming GitHubs Most Used Actions/Apps for Inspiration
-* 1h of exploration (renovate, CLA-Bot)
+* 1h of exploration (renovate, CLA-Bot, GHA external workflows)
 * 3h presentation/training (still not happy with it)
 * 1h of investigation (looking around what others do)
